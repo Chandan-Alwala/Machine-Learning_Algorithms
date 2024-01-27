@@ -1,7 +1,7 @@
-import tensorflow as tf #import tensorflow
-import numpy as np #import numpy to handle datasets
-import random #to set seed
-import matplotlib.pyplot as plt #to generate accuracy and loss plot
+import tensorflow as tf 
+import numpy as np 
+import random 
+import matplotlib.pyplot as plt 
 import os
 os.environ['TF_DETERMINISTIC_OPS'] = '1' #disable certain non-deterministic operations in TensorFlow
 
@@ -74,9 +74,7 @@ model = tf.keras.models.Sequential([
     # last layer is softmax
     tf.keras.layers.Dense(k, activation=tf.nn.softmax)
 ])
-# loss='categorical_entropy' expects input to be one-hot encoded
-# loss='sparse_categorical_entropy' expects input to be the category as a number
-# options for optimizer: 'sgd' and 'adam'. sgd is stochastic gradient descent
+
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
