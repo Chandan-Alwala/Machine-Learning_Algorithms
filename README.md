@@ -13,3 +13,6 @@ The `NeuralNetwork` folder focuses on tasks related to  equipment failure predic
 ## 3. SVM
 
 The `SVM` folder focuses on tasks related to  equipment failure prediction using SVM concepts. 
+
+## Note
+Each folder has its respective ReadMe file
